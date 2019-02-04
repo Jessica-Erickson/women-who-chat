@@ -1,5 +1,5 @@
-// const url = 'wss://women-who-chat.herokuapp.com';
-const url = 'ws://localhost:8080';
+const url = 'wss://women-who-chat.herokuapp.com';
+// const url = 'ws://localhost:8080';
 const connection = new WebSocket(url);
 
 connection.onmessage = e => {
