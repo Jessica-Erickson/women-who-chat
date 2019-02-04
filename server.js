@@ -5,7 +5,7 @@ const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
-server.listen(8080);
+server.listen(process.env.PORT || 8080);
 
 wss.on('connection', (ws) => {
   ws.userNum = 0;
@@ -77,9 +77,3 @@ app.locals.defaultUsers = [
 ];
 
 app.use(express.static('public'));
-
-app.set('port', process.env.PORT || 3000);
-
-app.listen(app.get('port'), function() {
-  console.log(`women who chat is running on port ${app.get('port')}`);
-});
