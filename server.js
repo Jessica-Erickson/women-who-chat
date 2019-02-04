@@ -5,7 +5,7 @@ const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
-server.listen(process.env.PORT || 8080);
+server.listen(8080);
 
 wss.on('connection', (ws) => {
   ws.userNum = 0;
