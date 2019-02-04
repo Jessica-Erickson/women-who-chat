@@ -1,0 +1,67 @@
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  overflow: scroll;
+}
+
+li {
+  border-radius: 10px;
+  border: thin solid black;
+  box-shadow: 5px 5px 5px black;
+  padding: 20px;
+  margin: 10px;
+}
+
+form {
+  background-color: green;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 20px;
+  text-align: center;
+}
+
+input {
+  border: none;
+  border-radius: .5rem;
+  font-size: 2rem;
+  height: 3rem;
+}
+
+#message {
+  margin-right: 2rem;
+  padding: 5px 10px;
+}
+
+.cursor {
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    display: block;
+    padding: 10px;
+  }
+
+  input {
+    display: block;
+    margin: 10px auto;
+  }
+
+  #message {
+    margin-right: auto;
+  }
+}

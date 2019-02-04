@@ -1,0 +1,28 @@
+{
+  "name": "women-who-chat",
+  "version": "1.0.0",
+  "description": "A simple websocket chat app demo.",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jessica-Erickson/women-who-chat.git"
+  },
+  "keywords": [
+    "node",
+    "websocket"
+  ],
+  "author": "Jessica Erickson (jerick999@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jessica-Erickson/women-who-chat/issues"
+  },
+  "homepage": "https://github.com/Jessica-Erickson/women-who-chat#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "ws": "^6.1.3"
+  }
+}
